@@ -1,0 +1,64 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #000958;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* Common */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  text-align: center;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+textarea,
+label,
+button,
+select,
+option,
+optgroup {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  height: 100vh;
+  max-width: calc(100% - 30px);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header */
