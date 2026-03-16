@@ -40,54 +40,62 @@
           <!-- Header Logo -->
           <a href="#!" class="header__logo logo">
             <img
-              src="path/to/lucy-logo.png"
+              src="./assets/icons/logo.svg"
               alt="Lucy Pet Care Services"
               class="logo__image"
             />
-            <span class="logo__text">Lucy</span>
           </a>
           <!-- Header Navbar -->
-          <nav class="header__nav nav">
+          <nav class="header__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="/" class="nav__link nav__link--active">Home</a>
+                <a href="#!" class="nav__link nav__link--active">Home</a>
               </li>
               <li class="nav__item">
-                <a href="/ve-chuong-toi" class="nav__link">About</a>
+                <a href="#!" class="nav__link">About</a>
               </li>
               <li class="nav__item">
-                <a href="/dich-vu-va-bang-gia" class="nav__link"
-                  >Services & Rates</a
-                >
+                <a href="#!" class="nav__link">Services & Rates</a>
               </li>
               <li class="nav__item">
-                <a href="/danh-gia" class="nav__link">Review</a>
+                <a href="#!" class="nav__link">Review</a>
               </li>
               <li class="nav__item">
-                <a href="/lien-he" class="nav__link">Contacts us</a>
+                <a href="#!" class="nav__link">Contacts us</a>
               </li>
             </ul>
           </nav>
 
-          <a href="#!" class="header__cta button button--secondary">
-            Sign up
-          </a>
+          <div class="header__action">
+            <a href="#!" class="header__cta"> Sign in </a>
+            <a href="#!" class="header__btn--secondary btn"> Sign up </a>
+          </div>
         </div>
         <!-- Hero Header -->
-        <section class="hero header__hero">
+        <section class="header__hero">
           <div class="hero__wrapper">
             <div class="hero__media">
               <div class="hero__image-wrapper hero__image-wrapper--main">
                 <img
-                  src="path/to/kitten-photo.jpg"
+                  src="./assets/img/red-cat.png"
                   alt="Chú mèo con đáng yêu"
                   class="hero__image"
+                />
+                <img
+                  src="./assets/icons/decor-01.svg"
+                  alt="Decor 01"
+                  class="hero__decor decor-one"
+                />
+                <img
+                  src="./assets/icons/decor-02.svg"
+                  alt="Decor 02"
+                  class="hero__decor decor-two"
                 />
               </div>
               <div class="hero__image-wrapper hero__image-wrapper--sub">
                 <img
-                  src="path/to/shih-tzu-photo.jpg"
-                  alt="Chú chó Shih Tzu thân thiện"
+                  src="./assets/img/cute-dog.png"
+                  alt="Cute dog"
                   class="hero__image"
                 />
               </div>
@@ -96,26 +104,29 @@
                 <ul class="info-cards__list">
                   <li class="info-cards__item info-card">
                     <img
-                      src="path/to/info-icon-1.png"
+                      src="./assets/img/icon-dog-white.png"
                       alt=""
-                      class="info-card__icon"
+                      class="info-card__icon pet-health"
                       aria-hidden="true"
                     />
                     <div class="info-card__content">
-                      <p class="info-card__title">Sức khỏe thú cưng</p>
-                      <p class="info-card__text">Dịch vụ y tế định kỳ</p>
+                      <h3 class="info-card__title">Pet Health</h3>
+                      <span class="info__line"></span>
+                      <span class="info__line next"></span>
                     </div>
                   </li>
+                  <li class="info_break"></li>
                   <li class="info-cards__item info-card">
                     <img
-                      src="path/to/info-icon-2.png"
+                      src="./assets/img/icon-dog-black.png"
                       alt=""
-                      class="info-card__icon"
+                      class="info-card__icon pet-care"
                       aria-hidden="true"
                     />
                     <div class="info-card__content">
-                      <p class="info-card__title">Chăm sóc thú cưng</p>
-                      <p class="info-card__text">Dịch vụ chăm sóc hàng ngày</p>
+                      <h3 class="info-card__title">Pet care</h3>
+                      <span class="info__line"></span>
+                      <span class="info__line next"></span>
                     </div>
                   </li>
                 </ul>
@@ -123,30 +134,165 @@
             </div>
 
             <div class="hero__content">
-              <h1 class="hero__title title title--primary">
+              <h1 class="hero__title--primary">
                 Established & Trusted Pet Care Service
               </h1>
-              <p class="hero__description text text--large">
+              <p class="hero__description--large">
                 Discover a wide variety of Pawsitive services to choose from,
                 including daycare, private walks, office duty and spa.
               </p>
 
               <div class="hero__actions">
-                <a
-                  href="/dat-lich-hen"
-                  class="hero__btn button button--primary"
-                >
-                  Đặt lịch hẹn
-                  <span class="button__icon" aria-hidden="true">→</span>
+                <a href="#!" class="btn hero__button--primary">
+                  Book a Meet
+                  <span class="button__icon" aria-hidden="true">
+                    <svg
+                      width="4"
+                      height="6"
+                      viewBox="0 0 4 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.5 0.5L3 3L0.5 5.5"
+                        stroke="#FD5056"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
                 </a>
-                <a href="/goi-tu-van" class="hero__btn button button--text"
-                  >Lên lịch gọi tư vấn</a
-                >
+                <a href="#!" class="hero__button--text"> Schedule a Call </a>
               </div>
             </div>
           </div>
         </section>
       </div>
     </header>
+    <!-- Main -->
+    <main>
+      <!-- About -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-section__wrapper">
+            <div class="about-section__content">
+              <span class="about-section__subtitle">// About //</span>
+              <h2 class="about-section__title">Best Agency For Your Pet.</h2>
+              <p class="about-section__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+
+              <ul class="about-section__features">
+                <li class="about-section__feature-item">
+                  <span class="about-section__icon-check">
+                    <svg
+                      width="14"
+                      height="10"
+                      viewBox="0 0 14 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8125 1L4.9375 8.87465L1 4.9375"
+                        stroke="#FFF2E5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  Certified Groomer
+                </li>
+                <li class="about-section__feature-item">
+                  <span class="about-section__icon-check">
+                    <svg
+                      width="14"
+                      height="10"
+                      viewBox="0 0 14 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8125 1L4.9375 8.87465L1 4.9375"
+                        stroke="#FFF2E5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  Animal Lover
+                </li>
+                <li class="about-section__feature-item">
+                  <span class="about-section__icon-check">
+                    <svg
+                      width="14"
+                      height="10"
+                      viewBox="0 0 14 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8125 1L4.9375 8.87465L1 4.9375"
+                        stroke="#FFF2E5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  14+ Years Experience
+                </li>
+                <li class="about-section__feature-item">
+                  <span class="about-section__icon-check">
+                    <svg
+                      width="14"
+                      height="10"
+                      viewBox="0 0 14 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8125 1L4.9375 8.87465L1 4.9375"
+                        stroke="#FFF2E5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  Pet Parent Of 3 Dogs
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-section__media">
+              <figure class="about-section__image-box">
+                <img
+                  src="./assets/img/young-man.png"
+                  alt="A young man happily holding a grey kitten"
+                  class="about-section__image"
+                />
+              </figure>
+              <img
+                class="about__decor"
+                src="./assets/icons/decor-3.svg"
+                alt=""
+              />
+              <div class="about-section__badge badge-experience">
+                <span class="badge-experience__number">20+</span>
+                <span class="badge-experience__text">Years Experience</span>
+                <img
+                  src="./assets/icons/foot-cat.svg"
+                  alt="paw"
+                  class="badge-experience__icon-paw"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
